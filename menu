@@ -1,0 +1,95 @@
+// menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+{
+	int opcion,n,b,h,x;
+	do
+	{
+	cout<<"\tMENU\n\n";
+	cout<<"1.Par\n";
+	cout<<"2.Impar\n";
+	cout<<"3.Ecuacion\n";
+	cout<<"4.Valor Absoluto\n";
+	cout<<"5.Area\n";
+	cout<<"0.Salir\n";
+	cout<<"Escoja una opcion:";
+	cin>>opcion;
+	switch (opcion)
+		{
+		case 1:cout<<"par\n";
+				cout<<"ingrese numero:";
+				cin>>n;
+			if (n%2==0)
+				cout<<"es par";
+			else
+				cout<<"error";
+				getch();
+				break;
+		case 2:cout<<"impar\n";
+				cout<<"Ingrese numero:";
+				cin>>n;
+			if (n%2!=0)
+				cout<<"es impar";
+			else
+				cout<<"error";
+			getch();
+			break;
+		case 3:cout<<"ecuacion\n";
+				cout<<"Ingrese a:";
+			cin>>a;
+			cout<<"Ingrese b:";
+			cin>>b;
+			cout<<"Ingrese c:";
+			cin>>c;
+			d=b*b-4*a*c;
+			if (d>0)
+				x1=(-b+sqrt(d))/2*a
+				x2=(-b-sqrt(d))/2*a
+				cout<<"El valor de x1 es:";
+				cout<<x1;
+				cout<<"El valor de x2 es:";
+				cout<<x2;
+				if 
+
+			break;
+
+
+
+		case 4:cout<<"valor absoluto\n";
+				cout<<"Ingrese un numero:";
+				cin>>n;
+				if (n<0)
+				{
+					n=n*-1;}
+				cout<<"El valor absoluto es:"<<n;
+				getch();
+				break;
+		case 5:cout<<"Area\n";
+				cout<<"Ingrese base:";
+				cin>>b;
+				cout<<"Ingrese altura:";
+				cin>>h;
+				x=(b*h)/2;
+				cout<<"El area del triangulo es:";
+				cout<<x;
+				getch();
+				break;
+		case 0:cout<<"salir\n";
+				break;
+		default:cout<<"error\n";
+		}
+		system ("cls");
+	}
+	while (opcion!=0);
+	getch();
+}
+
