@@ -1,0 +1,27 @@
+programacion
+============
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int suma=0,numero,residuo,r;
+float exp=0;
+cout<<"Ingrese un numero:";
+cin>>numero;
+cout<<"Ingrese la base:";
+cin>>r;
+while(numero!=0)
+	{
+	residuo=numero%r;
+	numero=numero/r;
+	suma=suma+residuo*pow(10,exp);
+	exp++;
+	}
+cout<<"El numero convertido es:";
+cout<<suma;
+getch();
+}
