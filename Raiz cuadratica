@@ -1,0 +1,44 @@
+// Raices.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{float a,b,c,x1,x2,D,x,xr,xi,h,n,k,z;
+
+	   cout<<"Ingrese el valor de b:";
+			   cin>>b;
+			   cout<<"Ingrese el valor de a:";
+			   cin>>a;
+			   cout<<"Ingrese el valor de c";
+			   cin>>c;
+			   h>0;	
+			   a!=0;
+			   h=(b*b-4*a*c);
+			   if(h==0)
+			   {z=-b/2*a;
+			   cout<<"la raiz unica es"<<z<<"\n";}
+			   else
+			   { if(h>0) 
+			       {n=(-b+sqrt(h))/2*a;
+			       k=(-b-sqrt(h))/2*a;
+				   cout<<"la raiz x1: "<<n<<"\n";
+			       cout<<"la raiz x2: "<<k<<"\n";
+			        }
+			      else 
+			      {h=(h*-1);
+			       k=-b/(2*a);
+			       z=sqrt(h)/(2*a);
+			       cout<<"la raiz imaginaria 1 es: "<<k<<"+"<<z<<"i"<<endl;
+			       cout<<"la raiz imaginaria 2 es: "<<k<<"-"<<z<<"i"<<endl;
+			       }
+			   }
+			    
+			   getch();
+}
+
+
+
